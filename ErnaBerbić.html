@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Resume: Erna Berbić (PROJECT 3 - HTML + CSS + JS)</title>
+		<!--
+	        Name: Erna Berbić
+	        Course: CS412.1
+	        Assignment: Project 3 - HTML + CSS + JS
+	        Due Date: 07/12/2021
+	        Purpose: Create a resume of oneself using HTML, CSS and JavaScript
+	    -->
+
+	    <!-- LINK FOR GOOGLE ICON LIBRARY -->
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	    <link rel="stylesheet" href="Style.css">
+		
+	    <!--<link rel="stylesheet" href="observations.js">-->
+	    
+	</head>
+
+	<body>
+		
+		<p class="navigation">
+			<a href="#aboutMe" class="aboutMe">ABOUT ME</a>
+			<a href="#education" class="education">EDUCATION</a>
+			<a href="#skills" class="skills">SKILLS</a>
+			<a href="#work" class="work">WORK EXPERIENCE</a>
+			<a href="#contact" class="contact">CONTACT</a>
+		</p>
+
+		<section class="header">
+			<center><h1><i>WELCOME TO MY RESUME</i></h1></center>
+		</section>
+		
+<!-- ABOUT ME -->
+		
+		<a name="aboutMe"><h2>&#127799 ABOUT ME &#127799</h2></a> <!--This little flower emoji may not seem professional but I couldn't help myself, it was very adorable :) -->
+
+		<section class="intro">
+
+			<section id="fade" class="introPt1">
+		
+				<img src="me.png" alt="picture of Erna Berbić" title="Erna Berbić" class="pictureOfMe"><!--A picture of me :) -->
+
+				<div class="logoLinks">
+					<p class="logos">
+						<a href="https://www.instagram.com/berbic.erna/"><img src="instagram.png" class="instagram"></a>
+						<a href="https://www.facebook.com/erna.berbic/"><img src="facebook.png" class="facebook"></a>
+					</p>
+				</div>
+
+			</section>
+
+			<section id="fade" class="introPt2">
+
+				<div class="moreInfo">
+
+					<p class="name">
+						<b>Erna Berbić</b>
+					</p>
+
+					<p class="profession">
+						SOFTWARE ENGINEER
+					</p>
+
+					<p>
+						<b><u>Date of birth</u>:</b><br>
+						14.01.2000.<br>
+					</p>
+
+					<p>
+						<b><u>Address</u>:</b><br>
+						Sarajevo, Stup, Bregovi 33<br>
+					</p>	
+
+					<p>
+						<b><u>Telephone number</u>:</b><br>
+						062-407-904
+					</p>
+
+					<p>
+						<b><u>Email</u>:</b><br>
+						ernaeniberbic@gmail.com
+					</p>
+
+					<p>
+						<b><u>Degree</u>:</b><br>
+						Bachelor
+					</p>
+				</div>
+
+			</section>
+
+		</section>
+
+		<button style="background-color: rgb(255, 122, 162);color: white;" id="buttonScrollToTop" class="buttonScrollToTop">
+			<i class="material-icons">arrow_upward</i>
+		</button>
+		<script src="observations.js"></script>
+
+		<!--<script>
+			const buttonScrollToTop = document.querySelector("#buttonScrollToTop");
+
+			buttonScrollToTop.addEventListener("click",function(){
+				window.scrollTo({
+					top: 0,
+					left: 0,
+					behavior:"smooth"
+				});
+
+				//$("html, body").animate({scrollTop:0},"slow");
+			});
+		</script>-->
+
+<!-- EDUCATION -->
+		<a name="education"><h2>&#127891 EDUCATION &#127891</h2></a>
+
+		<section class="education">
+			<div class="listEdu">
+				<p>
+					<br>
+					<ul>
+						<li><b>Bachelor:</b> Software Engineering - <a class="ius" href="https://www.ius.edu.ba/"><b><abbr title="International University of Sarajevo">IUS</abbr></b></a></li>
+
+						<center><img src="IUS.png" alt="picture of IUS" title="International University of Sarajevo" class="pictureOfIUS"></center>
+
+						<li><b>Courses:</b></li>
+							<ol>
+								<li><a class="bit" href="https://bit-alliance.ba/"><b>Bit Alliance</b></a>: Python</li>
+								<li><a class="math" href="http://umks.pmf.unsa.ba/"><b><abbr title="Association of Mathematicians of Sarajevo Canton">Udruženje matematičara Kantona Sarajevo</abbr></b></a>: Java</li>
+								<li><a class="math" href="http://umks.pmf.unsa.ba/"><b><abbr title="Association of Mathematicians of Sarajevo Canton">Udruženje matematičara Kantona Sarajevo</abbr></b></a>: Advanced C++</li> <!--In respect to those that do not know the bosnian language, I put an english translation of the said association :)-->
+							</ol>
+					</ul>
+				</p>
+			</div>
+		</section>
+		
+
+<!-- SKILLS -->
+	<a name="skills"><h2>&#128218 SKILLS &#128218</h2></a>
+
+		<section class="skills">
+
+	            <!--After some additional searching I found that html provides us with various emojis. I find it fun to rate my knowledge of languages with little stars (rate:0-5) and provide a better picture of my skills to the viewers of my resume-->
+				<table>
+					<tr>
+						<th>Language</th> <th>Knowledge</th>
+					</tr>
+					<tr>
+						<td>Bosnian</td> <td>&#127775&#127775&#127775&#127775&#127775</td>
+					</tr>
+					<tr>
+						<td>English</td> <td>&#127775&#127775&#127775&#127775&#127775</td>
+					</tr>
+					<tr>
+						<td>German</td> <td>&#127775&#127775&#127775&#127775</td>
+					</tr>
+				</table>
+
+			<div class="skillsProg">
+				<center><p class="skillsProgTitle"><b>PROGRAMMING SKILLS</b></p></center>
+				<p>
+					<ul>
+		                <li>Programming</li>
+		                    <ul type="circle">
+		                        <li>Java</li>
+		                        <li>Python</li>
+		                        <li>Ruby</li>
+		                        <li>C++</li>
+		                        <li>C</li>
+		                        <li>PHP</li>
+		                        <li>HTML</li>
+		                    </ul>
+		                <br>
+		                <li>3D modeling</li>
+		                	<ul>
+		                		<li>SketchUp</li>
+		                		<li>AutoCAD</li>
+		                	</ul>
+		                <br>
+		                <li>Database management</li>
+		                	<ul>
+		                		<li>MySQL</li>
+		                	</ul>
+		            </ul>
+		        </p>
+	        </div>
+
+			<div class="skillsOthers">
+				<center><p class="skillsOthersTitle"><b>OTHER SKILLS</b></p></center>
+		        <p>
+		            <ul>
+		                <li>Team-work</li>
+		                <li>Problem solving</li>
+		                <li>Leadership</li>
+		            </ul>
+		        </p>
+	        </div>
+
+		</section>
+		
+
+<!-- WORK EXPERIENCE -->
+	<section class="work">
+		<a name="work"><h2>&#128187 WORK EXPERIENCE &#128187</h2></a>
+		<div class="workEx">
+			<p>
+				For my graduation work in my last year of high school, I've decided to design a classroom specifically for informatics by using the 3D modeling software SketchUp. After my presentation, my professor and mentor at that time gladly accepted it as an idea how to recreate one of our classrooms in the future.<br>
+				In addition, I've also tutored many students programming (C++, Java and Python) and database management (MySQL).
+			</p>
+		</div>
+	</section>	
+		
+
+<!-- CONTACT -->
+		<a name="contact"><h2>&#128222 CONTACT &#128222</h2></a>
+		<p> <strong>email: </strong> <a href="mailto:ernaeniberbic@gmail.com"> ernaeniberbic@gmail.com</a><br>
+            <strong>telephone number: </strong>062-407-904
+        </p>
+        
+
+		
+	</body>
+	
+	</html>
